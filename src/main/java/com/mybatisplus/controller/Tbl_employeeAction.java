@@ -33,6 +33,7 @@ public class Tbl_employeeAction {
     public Object getRealTimeHistoryList(@PathVariable("type") int type, CallbackParam param) {
         if(log.isDebugEnabled()){
             log.debug("tbl_employeelist接受到参数：PathVariable:{}, param:{}", type, param);
+            log.debug("用户合并代码测试", type, param);
         }
         try {
             return tbl_employeeServiceDiy.selectList(null);
